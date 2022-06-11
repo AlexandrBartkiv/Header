@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
@@ -28,16 +31,49 @@
             <img 
             class="logo"
             src="https://acad.org/wp-content/uploads/2017/08/ACAD_logo_200px.png" alt="" srcset="">
-            <div class="link"><span>Home</span></div>
-            <div class="link"><span>About</span><img src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset=""></div>
-            <div class="link"><span>Membership</span><img src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset=""></div>
-            <div class="link"><span>Meetings&Events</span><img src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset=""></div>
-            <div class="link"><span>Resources</span><img src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset=""></div>
-            <div class="link"><span>Cereer Center</span><img src="./assets/foreign.png" alt="" srcset=""></div>
-
-        
+            <div class="link"><span>Home</span>
+            </div>
+            <div data-name="about" class="link"><span>About</span><img class="arrow" src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset="">
+                <div class="dropDown">
+                    <div>75th Anniversary Year</div>
+                    <div>Who We Are</div>
+                    <div>Mission, Vision, Values</div>
+                    <div>Boards & Staff</div>
+                    <div>History</div>
+                    <div>Annual Award</div>
+                    <div>ACAD Fellow Program</div>
+                    <div>Contact</div>
+                </div>
+            </div>
+            <div data-name="membership" class="link"><span>Membership</span><img class="arrow" src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset="">
+                <div class="dropDown">
+                    <div>Member Benefits</div>
+                    <div>Join ACAD</div>
+                    <div>Get Involved</div>
+                    <div>Peer Conferencing Program</div>
+                </div>
+            </div>
+            <div data-name="meeting" class="link"><span>Meetings&Events</span><img class="arrow" src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset="">
+                <div class="dropDown">
+                    <div>Annual Meeting</div>
+                    <div>Conferences</div>
+                    <div>Dean's Intitute</div>
+                </div>
+            </div>
+            <div data-name="resources" class="link"><span>Resources</span><img class="arrow" src="./assets/arrow-down-sign-to-navigate.png" alt="" srcset="">
+                <div class="dropDown">
+                    <div>ACAD Reading List</div>
+                    <div>Explore Resources</div>
+                    <div>The resourcesHandbook for <br>
+                    Academic Deans</div>
+                    <div>The ACAD Leader</div>
+                    <div>Partner</div>
+                </div>
+            </div>
+            <div class="link"><span>Cereer Center</span><img class="foreign" src="./assets/foreign.png" alt="" srcset=""></div>
         </div>
     </dev>
     
 </body>
+<script src="./index.js"></script>
 </html>

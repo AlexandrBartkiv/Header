@@ -13,7 +13,7 @@ body .pageWraper {
   background-color: white;
   margin: 0 auto;
   width: 960px;
-  height: 100%;
+  height: 100vh;
 }
 
 body .pageWraper header {
@@ -92,7 +92,7 @@ body .pageWraper .topNav .logo {
   height: 100%;
   max-width: 200px;
   max-height: 91px;
-  margin: 0 2rem 0 0;
+  margin: 0 5rem 0 0;
 }
 
 body .pageWraper .topNav .link {
@@ -105,15 +105,49 @@ body .pageWraper .topNav .link {
   margin: 0.5rem;
 }
 
-body .pageWraper .topNav .link span {
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 16px;
+body .pageWraper .topNav .link:hover {
+  cursor: pointer;
 }
 
-body .pageWraper .topNav .link > img {
+body .pageWraper .topNav .link span {
+  font-family: 'Merriweather Sans';
+  font-weight: 700;
+  font-size: 14px;
+}
+
+body .pageWraper .topNav .link .foreign {
+  height: 15px;
+  width: 15px;
+}
+
+body .pageWraper .topNav .link img {
   width: 10px;
   height: 10px;
   margin: 0 0 0 0.2rem;
+}
+
+body .pageWraper .topNav .dropDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 120px;
+  -webkit-box-shadow: 0 0 0 0 black;
+          box-shadow: 0 0 0 0 black;
+}
+
+body .pageWraper .topNav .dropDown div {
+  padding: 10px;
+  font-family: 'Merriweather Sans';
+  font-size: 14px;
+  color: #44667c;
+}
+
+body .pageWraper .topNav .dropDown div:hover {
+  color: orange;
 }
 /*# sourceMappingURL=style.css.map */

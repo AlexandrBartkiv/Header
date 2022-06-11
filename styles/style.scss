@@ -7,7 +7,7 @@ body{
         background-color: white;
         margin: 0 auto;
         width: 960px;
-        height: 100%;
+        height: 100vh;
         header{
             background-color: #44667c;
             display: flex;
@@ -56,21 +56,44 @@ body{
                 height: 100%;
                 max-width: 200px;
                 max-height: 91px;
-                margin: 0 2rem 0 0;
+                margin: 0 5rem 0 0;
             }
             .link{
                 display: flex;
                 align-items: center;
                 margin: 0.5rem;
-                span{
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size: 16px;
+                &:hover{
+                    cursor: pointer;
                 }
-                >img{
+                span{
+                    font-family: 'Merriweather Sans';
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                .foreign{
+                    height: 15px;
+                    width: 15px;
+                }
+                img{
                     width: 10px;
                     height: 10px;
                     margin: 0 0 0 0.2rem;
+                }
+            }
+            .dropDown{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 120px;
+                box-shadow:0 0 0 0 black;
+                div{
+                    padding: 10px;
+                    font-family: 'Merriweather Sans';
+                    font-size: 14px;
+                    color: #44667c;
+                    &:hover{
+                        color:orange;
+                    }
                 }
             }
         }
